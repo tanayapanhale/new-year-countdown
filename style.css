@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hedvig+Letters+Serif:opsz@12..24&family=Martel+Sans:wght@600&family=Poppins:wght@600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Abril Fatface', serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 80px 13%;
+    background-color: black;
+}
+h1{
+    color:aqua;
+    font-size: 10vh;
+    margin-bottom:-2.5vw;
+    padding: 20px;
+}
+p{
+    color:aliceblue;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight:700;
+    margin-bottom: 4vw;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+    gap:2rem;
+    width: 100%;
+}
+.container .bx{
+    border-radius:10px;
+    height: 14.25rem;
+    background: rgba(116, 112, 112, 0.349);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom:10px solid aqua;
+}
+.container .bx .text{
+    color:aliceblue;
+}
+.container .bx .counter{
+    color:aliceblue;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -5;
+}
